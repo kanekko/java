@@ -31,12 +31,14 @@ class COrdenador
 	
 	void ApagarOrdenador()
 	{
-		if (OrdenadorEncendido == false) // si está apagado...
-			System.out.println("El ordenador ya está apagado.");
-		else // si no está apagado, apagarlo.
+		if (OrdenadorEncendido == true) // si no está apagado, apagarlo.
 		{
 			OrdenadorEncendido = false;
-			System.out.println("El ordenador se ha apagado.");
+			System.out.println("El ordenador se ha apagado.");			
+		}			
+		else // si está apagado...
+		{
+			System.out.println("El ordenador ya está apagado.");
 		}
 	}
 
