@@ -28,6 +28,17 @@ class COrdenador
 		else // si no está encendido...
 			System.out.println("El ordenador está apagado.");  
 	}
+	
+	void ApagarOrdenador()
+	{
+		if (OrdenadorEncendido == false) // si está apagado...
+			System.out.println("El ordenador ya está apagado.");
+		else // si no está apagado, apagarlo.
+		{
+			OrdenadorEncendido = false;
+			System.out.println("El ordenador se ha apagado.");
+		}
+	}
 
 	public static void main(String[] args) 
 	{
@@ -36,6 +47,9 @@ class COrdenador
 		MiOrdenador.Procesador = "Intel Pentium";
 		MiOrdenador.Pantalla = "TFT";
 		MiOrdenador.EncenderOrdenador();
+		MiOrdenador.Estado();
+		
+		MiOrdenador.ApagarOrdenador();
 		MiOrdenador.Estado();	
 	}
 
