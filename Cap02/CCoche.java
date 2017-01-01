@@ -26,7 +26,7 @@ class CCoche
 		if(PedalFreno == true)
 			PalancaDeCambios = PalancaDeCambios - 1;
 		
-		System.out.println("PalancaDeCambios:~>" + PalancaDeCambios);
+		System.out.println("$PalancaDeCambios:~>" + PalancaDeCambios);
 	} 
 	
 	void Acelerar()
